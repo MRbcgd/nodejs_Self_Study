@@ -1,0 +1,10 @@
+h1
+  a(href='/Home') Home
+if user
+  p Welcome
+    &nbsp;
+    = user.displayName
+  p
+    a(href='/auth/logout') logout
+else
+  p Welcome Please Login!

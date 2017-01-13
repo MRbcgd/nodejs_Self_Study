@@ -1,0 +1,13 @@
+extends ../mysql/index.jade
+
+block div
+  if !user
+    div
+      h1 Please Login!
+  else
+    div
+      form(action='fileUpload', method='POST' enctype="multipart/form-data")
+        //
+          multer을 사용하기 위해서 반드시 써주어야함
+        input(type='file', name='userfile')
+        input(type='submit')
