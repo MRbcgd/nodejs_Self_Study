@@ -1,0 +1,12 @@
+extends ../mysql/index.jade
+
+block div
+  if !user
+    div
+      h1 Please Login!
+  else
+    div
+      h1 count :
+      =count
+      br
+      <a href='count/reset'> reset

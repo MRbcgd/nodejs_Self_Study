@@ -26,5 +26,16 @@ Text Filing
 -메뉴바에는 제목을 읽어와서 제목을 누르면 내용을 출력한다. 여기서 내용은 파일에서 읽어온다.
 -글을 작성하면 DB에 등록되고 ID에 따라서 URL이 구분된다.
 -글을 수정 및 삭제할수 있다. 글을 누르면 DELETE와 REPLACE가 있음. DB에도 영향
+--
+버튼 클릭하면 file/textFiling로 이동
+
+등록된 파일이름들이 뜬다.
+파일이름을 클릭하면 file/1 ->이런식으로 뜨고 description이 밑에 표시된다.
+그리고 그 밑에 버튼들이 생긴다
+원래 있는것 add -> file/add
+
+파일클릭시 생성edit->file/1/edit
+파일클릭시 생성delete->file/1/delete 
+--
 Cookie
 -cart에 물건을 담으면 수량이 늘어난다. add를 누르면 카트에 상품을 추가하고 delete를 누르면 카트를 삭제. minus를 누르면 수량이 줄어든다.

@@ -1,0 +1,24 @@
+extends ../mysql/index.jade
+
+block div
+  if !user
+    div
+      h1 Please Login!
+  else
+    div
+      ul
+        each file in files
+          li
+            a(href='/file/textFiling/'+file)= file
+  article
+      if file
+        h1= file.title
+        h3= description
+      div
+        if user
+          a(href='/file/add') add
+        br
+        if file
+          a(href='/file/textFiling/'+file.title+'/edit') edit
+          br
+          a(href='/file/textFiling/'+file.title+'/delete') delete

@@ -1,0 +1,15 @@
+extends ../mysql/index.jade
+
+block div
+  if !user
+    div
+      h1 Please Login!
+  else
+    article
+      form(action='/file/textFiling' method='POST')
+        p
+          input(type='text' name='title' placeholder=title value=file.title)
+        p
+          textarea(name='description', rows='8', cols='80', placeholder='description')= description
+        p
+          input(type='submit')
